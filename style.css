@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #050505;
+    color: #eeeeef;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 8%;
+  }
+  
+  .logo {
+    color: #d8bd76;
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: none;
+  }
+  
+  nav {
+    display: flex;
+    gap: 24px;
+  }
+  
+  nav a, .socials a {
+    color: #eee;
+    text-decoration: none;
+  }
+  
+  .hero, .projects, .contact {
+    padding: 70px 12%;
+  }
+  
+  .hero {
+    min-height: 100vh;
+    background:
+      radial-gradient(ellipse at bottom,
+        #452080 0%, #17102a 35%, #050505 75%);
+  }
+  
+  .socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 22px;
+    margin-bottom: 100px;
+  }
+  
+  .socials a {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .eyebrow {
+    color: #d8bd76;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+    font-size: 12px;
+  }
+  
+  h1 {
+    font-size: clamp(44px, 8vw, 76px);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -3px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 24px 0;
+  }
+  
+  #typing {
+    color: #ddc77f;
+  }
+  
+  .intro {
+    max-width: 570px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #d5d5d8;
+    margin: 36px 0;
+  }
+  
+  .cta, .contact a {
+    display: inline-block;
+    color: #e4cc87;
+    border: 1px solid #8c7747;
+    border-radius: 30px;
+    padding: 13px 23px;
+    text-decoration: none;
+    margin-bottom: 40px;
+  }
+  
+  .profile {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    max-height: 650px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    margin-top: 25px;
+  }
+  
+  .projects, .contact {
+    background: #0b0910;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  
+  @media (max-width: 600px) {
+    header {
+      padding: 24px 7%;
+    }
+  
+    nav {
+      gap: 12px;
+    }
+  
+    nav a {
+      font-size: 12px;
+    }
+  
+    .hero, .projects, .contact {
+      padding: 45px 8%;
+    }
+  
+    .socials {
+      margin-bottom: 80px;
+    }
+  
+    h1 {
+      letter-spacing: -2px;
+    }
+  
+    .intro {
+      font-size: 18px;
+    }
+  }
+  
